@@ -1,3 +1,3 @@
 #include <vector>
 
-int bubble_sort(vector<int> numbers);
+void bubble_sort(std::vector<int> numbers);

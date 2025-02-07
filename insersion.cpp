@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int insersion_sort(vector<int> numbers) {    
+void insersion_sort(vector<int> numbers) {    
     int length_of_numbers = numbers.size();
     
     

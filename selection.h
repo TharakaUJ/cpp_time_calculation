@@ -1,2 +1,2 @@
 #include <vector>
-int selection_sort(std::vector<int> numbers);
+void selection_sort(std::vector<int> numbers);

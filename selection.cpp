@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int selection_sort(vector<int> numbers) {   
+void selection_sort(vector<int> numbers) {   
     int length_of_numbers = numbers.size();
     
     

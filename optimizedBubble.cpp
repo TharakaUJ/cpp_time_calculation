@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int optimized_bubble_sort(vector<int> numbers) {
+void optimized_bubble_sort(vector<int> numbers) {
     int length_of_numbers = numbers.size();
     
     bool not_sorted = true;

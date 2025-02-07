@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read CSV file
-df = pd.read_csv("results.csv")
+df = pd.read_csv("./../results.csv")
 
 # Plot execution times
 plt.figure(figsize=(10, 6))

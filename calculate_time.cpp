@@ -78,12 +78,14 @@ int main()
 
     for (size_t i = 0; i < testCases.size(); ++i)
     {
+        std::vector<int> testCase = testCases[i];
+        int length = testCase.size();
         double time1 = benchmark(insersion_sort, testCases[i]);
         double time2 = benchmark(bubble_sort, testCases[i]);
         double time3 = benchmark(optimized_bubble_sort, testCases[i]);
         double time4 = benchmark(selection_sort, testCases[i]);
 
-        resultsFile << i + 1 << "," << time1 << "," << time2 << "," << time3 << "," << time4 << "\n";
+        resultsFile << length << "," << time1 << "," << time2 << "," << time3 << "," << time4 << "\n";
         std::cout << "Test Case " << i + 1 << ": insersion_sort=" << time1 << "s, bubble_sort=" << time2 << "s, optimized_bubble_sort=" << time3 << "s, selection_sort=" << time4 << "s\n";
     }
 

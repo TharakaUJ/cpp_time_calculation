@@ -9,7 +9,7 @@ This project contains C++ functions for time calculation and a Python script for
 1. Navigate to the directory containing the C++ source files.
 2. Compile the C++ files using `g++`. For example:
     ```sh
-    g++ calculate_time.cpp insersion.cpp bubble.cpp optimizedBubble.cpp selection.cpp -o ./build/calculate_time
+    g++ ./src/calculate_time.cpp ./src/insersion.cpp ./src/bubble.cpp ./src/optimizedBubble.cpp ./src/selection cpp -o ./build/calculate_time45
     ```
 3. Run the compiled executable:
     ```sh

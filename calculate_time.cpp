@@ -74,7 +74,7 @@ int main()
     }
 
     std::ofstream resultsFile("results.csv");
-    resultsFile << "TestCase,Function1,Function2,Function3\n";
+    resultsFile << "TestCase,insersion_sort,bubble_sort,optimized_bubble_sort,selection_sort\n";
 
     for (size_t i = 0; i < testCases.size(); ++i)
     {
@@ -83,8 +83,8 @@ int main()
         double time3 = benchmark(optimized_bubble_sort, testCases[i]);
         double time4 = benchmark(selection_sort, testCases[i]);
 
-        resultsFile << i + 1 << "," << time1 << "," << time2 << "," << time3 << "\n";
-        std::cout << "Test Case " << i + 1 << ": Function1=" << time1 << "s, Function2=" << time2 << "s, Function3=" << time3 << "s\n";
+        resultsFile << i + 1 << "," << time1 << "," << time2 << "," << time3 << "," << time4 << "\n";
+        std::cout << "Test Case " << i + 1 << ": insersion_sort=" << time1 << "s, bubble_sort=" << time2 << "s, optimized_bubble_sort=" << time3 << "s, selection_sort=" << time4 << "s\n";
     }
 
     resultsFile.close();

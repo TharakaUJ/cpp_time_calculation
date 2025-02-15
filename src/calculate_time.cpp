@@ -6,10 +6,10 @@
 #include <chrono>
 
 // Functions
-#include "optimizedBubble.h"
-#include "bubble.h"
-#include "selection.h"
-#include "insersion.h"
+#include "./optimizedBubbleSort/optimizedBubble.h"
+#include "./bubbleSort/bubble.h"
+#include "./selectionSort/selection.h"
+#include "./insertionSort/insertion.h"
 
 // Function to read test cases from a file
 std::vector<std::vector<int>> readTestCases(const std::string &filename)
